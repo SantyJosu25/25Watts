@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Watts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/footer-logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#inicio">
+                <img src="img/top-logo.svg" alt="logo">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <section id="home" class="section-home">
+            <div class="slider">
+                <div class="slider-items">
+                    <div class="slider-item slider-item-first slider-item-active">
+                        <div class="container">
+                            <h2>Sed ut perspiciatis<br> unde omnis iste natus</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error<br> sit voluptatem accusantium
+                                doloremque.</p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <ul>
+                        <li><a href="" class="slider-nav-active"></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section-about">
+            <div class="col-7 col-offset-3">
+                <div class="row content">
+                    <h2>We Help Businesses <span>Grow and Innovate</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut</p>
+                </div>
+            </div>
+        </section>
+        <section id="products" class="section-products">
+            <div class="products-content">
+                <div class="products-cards">
+                    <div>
+                        <h3>Sed ut perspiciatis</h3>
+                        <h2>Nemo Enim</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div class="products-card-navs">
+                        <a href="javascript:;" class="nav-left"><img src="img/Icon feather-arrow-left-circle.svg"
+                                alt=""></a>
+                        <a href="javascript:;" class="nav-right"><img src="img/Icon feather-arrow-right-circle.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="section-services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 col-sm-12">
+                        <div class="accordion" id="accordionE">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Sed ut perspiciatis</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Ut enim ad minima veniam</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Sit amet, consectetur, adipisci</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+        </section>
+        <section id="contact" class="section-contact">
+            <div class="form">
+                <h3><span>Get in touch</span> We are hiring!</h3>
+                <form action="" method="post">
+                    <label for="lname">Name</label><br>
+                    <input type="text" name="" id=""><br>
+                    <label for="lemail">Email</label><br>
+                    <input type="email" name="" id=""><br>
+                    <label for="Lphone">Phone</label><br>
+                    <input type="tel" name="" id=""><br>
+                    <label for="lmsg">Message</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+            <img src="img/contact-image.png" alt="">
+        </section>
+    </main>
+    <footer>
+        <p>2020 © All rights reserved.</p>
+        <img src="img/footer-logo.svg" alt="logo 25Watts">
+    </footer>
+</body>
+
+</html>
