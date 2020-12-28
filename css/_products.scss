@@ -4,17 +4,17 @@
     padding-bottom: 100px;
 }
 
-.products__content {
+.products-content {
     @extend .container;
     
     height: 552px;
-    background-image: url("../images/section3-image.png");
+    background-image: url("../img/section3-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.products__cards {
+.products-cards {
     background-color: $color-primary;
     position: absolute;
     right: 0;
@@ -25,26 +25,26 @@
     color: #ffffff;
 }
 
-.products__cards h3,
-.products__cards h2 {
+.products-cards h3,
+.products-cards h2 {
     color: #ffffff;
     line-height: 1;
 }
 
-.products__cards h3 {
+.products-cards h3 {
     margin: 0;
     padding-bottom: 0;
     font-size: 16px;
 }
 
-.products__cards h2 {
+.products-cards h2 {
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 0;
     font-size: 39px;
 }
 
-.products__card-navs {
+.products-card-navs {
     position: absolute;
     bottom: 50px;
     right: 50px;
