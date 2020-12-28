@@ -1,0 +1,22 @@
+.footer {
+    background-color: #343434;
+    position: absolute;
+    width: 100%;
+
+    .row {
+        padding: 20px 16px;
+        display: flex;
+        
+        p{
+            justify-content: flex-start;
+            color: #ffffff;
+            font-size: 16px;
+            display: block;
+        }
+
+        img{
+            float: right;
+        }
+    }
+    
+}

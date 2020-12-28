@@ -619,7 +619,7 @@ progress {
   color: #6c757d;
 }
 
-.container, .section-home .slider-nav > ul, .products-content,
+.container, .section-home .slider-nav > ul, .products-content, .section-contact .contact-content,
 .container-fluid,
 .container-sm,
 .container-md,
@@ -634,31 +634,31 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container, .section-home .slider-nav > ul, .products-content, .container-sm {
+  .container, .section-home .slider-nav > ul, .products-content, .section-contact .contact-content, .container-sm {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container, .section-home .slider-nav > ul, .products-content, .container-sm, .container-md {
+  .container, .section-home .slider-nav > ul, .products-content, .section-contact .contact-content, .container-sm, .container-md {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container, .section-home .slider-nav > ul, .products-content, .container-sm, .container-md, .container-lg {
+  .container, .section-home .slider-nav > ul, .products-content, .section-contact .contact-content, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container, .section-home .slider-nav > ul, .products-content, .container-sm, .container-md, .container-lg, .container-xl {
+  .container, .section-home .slider-nav > ul, .products-content, .section-contact .contact-content, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
 }
 
 @media (min-width: 1400px) {
-  .container, .section-home .slider-nav > ul, .products-content, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  .container, .section-home .slider-nav > ul, .products-content, .section-contact .contact-content, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1320px;
   }
 }
@@ -4351,7 +4351,7 @@ fieldset:disabled .btn {
   padding-bottom: 0.5rem;
 }
 
-.navbar > .container, .section-home .slider-nav.navbar > ul, .navbar > .products-content,
+.navbar > .container, .section-home .slider-nav.navbar > ul, .navbar > .products-content, .section-contact .navbar > .contact-content,
 .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11335,7 +11335,6 @@ body {
   content: "";
 }
 
-/** Estilos generales */
 a {
   color: black;
 }
@@ -11536,7 +11535,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding-bottom: 20px;
 }
 
-.header .container, .header .section-home .slider-nav > ul, .section-home .header .slider-nav > ul, .header .products-content {
+.header .container, .header .section-home .slider-nav > ul, .section-home .header .slider-nav > ul, .header .products-content, .header .section-contact .contact-content, .section-contact .header .contact-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11573,6 +11572,32 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+}
+
+.footer {
+  background-color: #343434;
+  position: absolute;
+  width: 100%;
+}
+
+.footer .row {
+  padding: 20px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .row p {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+}
+
+.footer .row img {
+  float: right;
 }
 
 .section-home .slider-item {
@@ -11707,7 +11732,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-align: left;
 }
 
-.products {
+.section-products {
   background: -webkit-gradient(linear, left top, right top, color-stop(75%, #f2f4f1), color-stop(25%, #dce1da));
   background: linear-gradient(90deg, #f2f4f1 75%, #dce1da 25%);
   padding-top: 100px;
@@ -11771,7 +11796,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 0;
 }
 
-.section-services .container, .section-services .section-home .slider-nav > ul, .section-home .section-services .slider-nav > ul, .section-services .products-content, .section-services .row {
+.section-services .container, .section-services .section-home .slider-nav > ul, .section-home .section-services .slider-nav > ul, .section-services .products-content, .section-services .section-contact .contact-content, .section-contact .section-services .contact-content, .section-services .row {
   height: 100%;
 }
 
@@ -11807,5 +11832,69 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .section-services .accordion .accordion-body {
   padding: 40px;
   font-size: 1.6rem;
+}
+
+.section-contact {
+  background: -webkit-gradient(linear, left top, right top, color-stop(75%, #f2f4f1), color-stop(25%, #dce1da));
+  background: linear-gradient(90deg, #f2f4f1 75%, #dce1da 25%);
+}
+
+.section-contact .contact-content {
+  background-image: url("../img/contact-image.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding: 90px 25px;
+  background-position-y: center;
+}
+
+.section-contact h2, .section-contact .h2 {
+  font-size: 3.9rem;
+  color: black;
+}
+
+.section-contact h2 > span, .section-contact .h2 > span {
+  display: block;
+  color: #e0752f;
+}
+
+.section-contact input[type="text"],
+.section-contact input[type="email"],
+.section-contact input[type="tel"] {
+  outline: none;
+  font-size: 13px;
+  color: #000;
+  padding: 15px 10px;
+  width: 40%;
+  border: none;
+  border-bottom: 1px solid #e0752f;
+  -webkit-appearance: none;
+  margin-bottom: 30px;
+  margin-left: 3px;
+  background: transparent;
+}
+
+.section-contact textarea {
+  outline: none;
+  font-size: 13px;
+  color: #000;
+  padding: 15px 10px;
+  margin-left: 3px;
+  width: 40%;
+  height: 79px;
+  border: none;
+  border-bottom: 1px solid #e0752f;
+  -webkit-appearance: none;
+  background: transparent;
+  resize: none;
+  font-family: "Oxygen", sans-serif;
+}
+
+.section-contact input[type="submit"] {
+  color: white;
+  border: none;
+  background-color: #e0752f;
+  border-radius: 25px;
+  font-size: 1.7rem;
+  padding: 5px 40px;
 }
 /*# sourceMappingURL=style.css.map */
