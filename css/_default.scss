@@ -1,0 +1,73 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/** Estilos generales */
+a {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+// .container {
+//     width: 100%;
+//     max-width: 1120px;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     @include breakpoint('mobile') {
+//         margin-left: 15px;
+//         margin-right: 15px;
+//     }
+// }
+
+.section {
+    height: 100vh;
+    min-height: 800px;
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 4.5rem;
+    }
+}
+
+@include make-grid-columns(12);
